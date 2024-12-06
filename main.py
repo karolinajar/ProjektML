@@ -17,6 +17,8 @@ from data_processing import (
 from modeling import train_model
 import pandas as pd
 
+results_path = p('results')
+results_path.mkdir(parents=True, exist_ok=True)
 def display_sample(df, message):
     print(message)
     print(df.head(), "\n")

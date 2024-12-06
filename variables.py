@@ -4,7 +4,7 @@ RESULTS_PATH = 'results/'
 
 # Parametry przetwarzania danych
 THRESHOLD_CORRELATION = 0.9
-THRESHOLD_VARIANCE = 0.01          #
+THRESHOLD_VARIANCE = 0.01
 
 # Parametry modelowania
 TEST_SIZE = 0.2

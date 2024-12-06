@@ -118,9 +118,7 @@ def interpret_with_shap(model, X_train):
 
 
 def train_model(df, model_type="random_forest", balance_method="smote", use_grid_search=False, use_pca=True):
-    """
-    Trenuje model na przetworzonych danych z opcjonalnym Grid Search i generuje interpretacje wyników.
-    """
+
     X = df.drop(columns=[TARGET_COLUMN])
     y = df[TARGET_COLUMN]
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE, random_state=RANDOM_STATE)
