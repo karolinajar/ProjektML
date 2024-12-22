@@ -1,7 +1,7 @@
 
 PATH_TO_FILE = 'datasets/stroke.csv'
 RESULTS_PATH = 'results/'
-#testest
+
 # Parametry przetwarzania danych
 THRESHOLD_CORRELATION = 0.9
 THRESHOLD_VARIANCE = 0.01
