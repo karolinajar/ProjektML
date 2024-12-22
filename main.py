@@ -53,6 +53,7 @@ def main(show_visualizations=False, interpret_results=True):
     print("\nLiczba braków danych po imputacji:")
     print(missing_after)
 
+
     # tworzenie nowych zmiennych
     df = create_new_features(df)
     display_sample(df, "Przykładowe dane po dodaniu nowych zmiennych:")
@@ -81,7 +82,7 @@ def main(show_visualizations=False, interpret_results=True):
     print("\n### Modelowanie bez PCA ###")
     train_model(df, model_type=MODEL_TYPE, balance_method=BALANCE_METHOD, use_grid_search=USE_GRID_SEARCH, use_pca=False)
 
-
+    print("testest")
 
 
 if __name__ == "__main__":
