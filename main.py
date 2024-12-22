@@ -1,4 +1,6 @@
 from pathlib import Path as p
+from modeling import train_model
+import pandas as pd
 from variables import (
     PATH_TO_FILE, COLUMNS_TO_DROP, THRESHOLD_CORRELATION, THRESHOLD_VARIANCE,
     BALANCE_METHOD, MODEL_TYPE, TARGET_COLUMN, USE_GRID_SEARCH, PCA_COMPONENTS, INTERPRET_RESULTS
@@ -14,8 +16,7 @@ from data_processing import (
     create_new_features,
     apply_pca
 )
-from modeling import train_model
-import pandas as pd
+
 
 results_path = p('results')
 results_path.mkdir(parents=True, exist_ok=True)
