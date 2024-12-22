@@ -23,7 +23,7 @@ def display_sample(df, message):
     print(message)
     print(df.head(), "\n")
 
-#testtest
+
 def count_missing_values(df):
     return df.isnull().sum()
 
@@ -82,7 +82,7 @@ def main(show_visualizations=False, interpret_results=True):
     print("\n### Modelowanie bez PCA ###")
     train_model(df, model_type=MODEL_TYPE, balance_method=BALANCE_METHOD, use_grid_search=USE_GRID_SEARCH, use_pca=False)
 
-    print("testest")
+
 
 
 if __name__ == "__main__":
